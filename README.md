@@ -15,7 +15,7 @@ This project came from a major problem, opening Mashov just to get my time-table
 
 <!-- GETTING STARTED -->
 ## Getting Started
-This is an example of how you should use the script. Please read carefully
+This is an example of how you should setup the script. Please read carefully
 
 ### Prerequisites
 
@@ -30,14 +30,17 @@ Make sure you have Python installed
 1. Download the repo
 2. Install Pip packages
 
+<!-- Disclaimer -->
+## Disclaimer
+
+<b>I'm not related with "Mashov" company in any way.</b>
+
 <!-- USAGE EXAMPLES -->
 ## Usage
 
 * Run the script and follow the instructions
   ```sh
   py main.py
-
-
 <!-- LICENSE -->
 ## License
 
