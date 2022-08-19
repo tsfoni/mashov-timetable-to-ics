@@ -19,7 +19,7 @@ This is an example of how you should setup the script. Please read carefully
 
 ### Prerequisites
 
-* Make sure you have Python installed -https://www.python.org/downloads/
+* Make sure you have Python installed - https://www.python.org/downloads/
 
 * Pip packages
   ```sh
@@ -29,17 +29,16 @@ This is an example of how you should setup the script. Please read carefully
 1. Download the repo
 2. Install Pip packages
 
-<!-- Disclaimer -->
-## Disclaimer
-
-<b>I'm not related with "Mashov" company in any way and this is an unofficial API.</b>
-
 <!-- USAGE EXAMPLES -->
 ## Usage
 
 * Run the script and follow the instructions
   ```sh
   py main.py
+## Disclaimer
+
+<b>I'm not related with "Mashov" company in any way and this is an unofficial API.</b>
+
 <!-- LICENSE -->
 ## License
 
