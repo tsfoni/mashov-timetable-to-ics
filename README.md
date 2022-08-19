@@ -19,8 +19,7 @@ This is an example of how you should setup the script. Please read carefully
 
 ### Prerequisites
 
-Make sure you have Python installed
-* https://www.python.org/downloads/
+* Make sure you have Python installed -https://www.python.org/downloads/
 
 * Pip packages
   ```sh
@@ -33,7 +32,7 @@ Make sure you have Python installed
 <!-- Disclaimer -->
 ## Disclaimer
 
-<b>I'm not related with "Mashov" company in any way.</b>
+<b>I'm not related with "Mashov" company in any way and this is an unofficial API.</b>
 
 <!-- USAGE EXAMPLES -->
 ## Usage
