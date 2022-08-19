@@ -35,6 +35,7 @@ This is an example of how you should setup the script. Please read carefully
 * Run the script and follow the instructions
   ```sh
   py main.py
+* Importing timetable to Google Calendar - https://youtu.be/drwYthf5Am8
 ## Disclaimer
 
 <b>I'm not related with "Mashov" company in any way and this is an unofficial API.</b>
