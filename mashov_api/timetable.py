@@ -1,3 +1,5 @@
+# Written by Harel Tsfoni (bizz.harel@gmail.com)
+
 from datetime import datetime, time, timedelta
 import requests
 

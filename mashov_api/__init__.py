@@ -1,4 +1,4 @@
-# Written by Harel Tsfoni
+# Written by Harel Tsfoni (bizz.harel@gmail.com)
 
 import requests
 from datetime import datetime, timedelta
