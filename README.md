@@ -17,8 +17,11 @@ This project came from a major problem, opening Mashov just to get my time-table
 ## Getting Started
 This is an example of how you should setup the script. Please read carefully
 
-### Prerequisites
+## One click installation
+<b>This type of installation does not require any prerequisites</b> (E.g: Python, Pip packages)
+1. Navigate to `release` and download the executable 
 
+### Prerequisites
 * Make sure you have Python installed - https://www.python.org/downloads/
 
 * Pip packages
