@@ -36,7 +36,7 @@ def get_closest_date(date: datetime, weekday: int) -> datetime:
 
 
 
-def create_timetable(begins: datetime, ends: datetime, login_details: requests.Response) -> None:
+def create_timetable(begins: datetime, ends: datetime, login_details: requests.Response) -> timetable:
     timetable = fetch_timetable(login_details)
     c = Calendar()
     c.creator = "Mashov Time-table API - By Harel Tsfoni"
@@ -74,3 +74,4 @@ def create_timetable(begins: datetime, ends: datetime, login_details: requests.R
     with open('timetable.ics', 'w', encoding='utf-8') as file:
         file.writelines(c.serialize_iter())
 
+    return timetable

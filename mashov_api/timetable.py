@@ -24,7 +24,7 @@ class lesson:
     Details about the lessons
     """
     def __init__(self, name: str, room: str, teachers: list, weekday: int,
-                lesson_number: str, starts: time, ends: time ) -> None:
+                lesson_number: str, starts=time(0, 0, 0), ends=time(0, 0, 0)) -> None:
         self.name = name
         self.room = room
         self.teachers = teachers
@@ -32,14 +32,22 @@ class lesson:
         self.lesson_number = lesson_number
         self.starts = starts
         self.ends = ends
+    
+    def __str__(self) -> str:
+        return F"{self.name} - {self.weekday}: {self.lesson_number}"
 
 class timetable:
     def __init__(self, owner_name: str) -> None:
         self.owner_name = owner_name
         self.lessons = []
+        self.fails = []
 
     def add_lesson(self, lesson: lesson):
         self.lessons.append(lesson)
+    
+    def add_fail(self, lesson: lesson):
+        self.fails.append(lesson)
+
 
 def lesson_time_to_dict(lessons_time_json) -> dict:
     """
@@ -79,19 +87,21 @@ def fetch_timetable(mashov_login_details: requests.Response) -> timetable:
     _timetable = timetable(user_info["credential"]["displayName"])
     
     for _lesson in lessons:
-        _timetable.add_lesson(
-            lesson(_lesson["groupDetails"]["subjectName"],
+        tmp_lesson =  lesson(_lesson["groupDetails"]["subjectName"],
                 _lesson["timeTable"]["roomNum"], fetch_teachers(_lesson),
                 days_of_week[_lesson["timeTable"]["day"]], 
-                _lesson["timeTable"]["lesson"], 
-                lessons_times[_lesson["timeTable"]["lesson"]]["startTime"],
-                lessons_times[_lesson["timeTable"]["lesson"]]["endTime"]
-            )
-        )
+                _lesson["timeTable"]["lesson"])
+        
+        if _lesson["timeTable"]["lesson"] not in lessons_times: # Sometimes there is no start time for lesson
+            _timetable.add_fail(tmp_lesson)
+            continue
+        
+        tmp_lesson.starts = lessons_times[_lesson["timeTable"]["lesson"]]["startTime"]
+        tmp_lesson.ends = lessons_times[_lesson["timeTable"]["lesson"]]["endTime"]
+
+        _timetable.add_lesson(tmp_lesson)
 
     
     return _timetable
-
-
 
 
