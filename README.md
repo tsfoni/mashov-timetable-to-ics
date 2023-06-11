@@ -9,9 +9,7 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-
-Convert the Mashov time-table into an iCalendar file and make life much easier.
-This project came from a major problem, opening Mashov just to get my time-table, I reached the Mashov contact center and asked them to make this feature, they refused to do that so I did it myself.
+Convert the Mashov timetable into an iCalendar file and make life much easier. This project arose from a major problem: opening Mashov just to access my timetable. I contacted the Mashov contact center and requested this feature, but they refused to implement it. Therefore, I took it upon myself to create it.
 
 ## One click installation
 <b>This type of installation does not require any prerequisites</b> (E.g: Python, Pip packages)
