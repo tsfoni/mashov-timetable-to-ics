@@ -7,9 +7,9 @@
   </p>
 </div>
 
-<!-- ABOUT THE PROJECT -->
-## About The Project
-Convert the Mashov timetable into an iCalendar file and make life much easier. This project arose from a major problem: opening Mashov just to access my timetable. I contacted the Mashov contact center and requested this feature, but they refused to implement it. Therefore, I took it upon myself to create it.
+<!-- ABOUT THE SCRIPT -->
+## About The Script
+Convert the Mashov timetable into an iCalendar file. I contacted Mashov and requested this feature, but they refused to implement it.
 
 ## One click installation
 <b>This type of installation does not require any prerequisites</b> (E.g: Python, Pip packages)
@@ -49,9 +49,3 @@ This is an example of how you should setup the script. Please read carefully
 ## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
-
-<!-- CONTACT -->
-
-## Contact
-
-Harel - bizz.harel@gmail.com
